@@ -1,0 +1,181 @@
+{
+  "clients": [
+    "Jacobson's Construction",
+    "UrbanBath",
+    "Floor Concepts",
+    "Malabar Cravings",
+    "Nitara",
+    "Prairie Dental",
+    "Ridgeview HVAC",
+    "Ember & Oak",
+    "Harvest Law",
+    "Northside Auto",
+    "West End Wellness",
+    "Birch & Beam",
+    "Riverbend Physio",
+    "Goldstream Cabinetry"
+  ],
+  "services": [
+    {
+      "title": "SEO",
+      "description": "Local and organic search that matches how Alberta customers look for you.",
+      "detail": "Keyword strategy, on-page and technical work, and Google Business Profile — built for people who are already ready to buy."
+    },
+    {
+      "title": "Digital media",
+      "description": "Paid social and search managed for return, not vanity reach.",
+      "detail": "Budgets pointed at inquiries, bookings, and quote requests. You see what ran, what it cost, and what it brought in."
+    },
+    {
+      "title": "Websites",
+      "description": "Fast, clear sites that turn visits into leads and give SEO something solid to stand on.",
+      "detail": "Mobile-first, quiet design, obvious next steps. A site your customers can actually use — and that search can actually rank."
+    }
+  ],
+  "process": [
+    {
+      "num": "01",
+      "title": "Discover",
+      "description": "Your business, your customers, and the work that would actually move the number."
+    },
+    {
+      "num": "02",
+      "title": "Strategy",
+      "description": "A plan across search, media, and the site — not three disconnected vendors."
+    },
+    {
+      "num": "03",
+      "title": "Execute",
+      "description": "Launch the work with tracking in place from day one. No mystery month."
+    },
+    {
+      "num": "04",
+      "title": "Grow",
+      "description": "Review what landed, keep what works, and cut what does not."
+    }
+  ],
+  "work": [
+    {
+      "id": "jacobsons",
+      "client": "Jacobson's Construction",
+      "industry": "Construction",
+      "year": "2025",
+      "tags": ["Website", "SEO"],
+      "summary": "A project-showcase site and local SEO foundation so visitors ask for a quote instead of bouncing to the next contractor.",
+      "result": "Quote requests from the site, not the phone tree.",
+      "palette": "forest"
+    },
+    {
+      "id": "urbanbath",
+      "client": "UrbanBath",
+      "industry": "Home renovation",
+      "year": "2025",
+      "tags": ["Website", "Digital media"],
+      "summary": "A conversion-first site paired with targeted ads for homeowners ready to renovate, not browse inspiration forever.",
+      "result": "Inquiries from ads that actually convert.",
+      "palette": "slate"
+    },
+    {
+      "id": "floor-concepts",
+      "client": "Floor Concepts",
+      "industry": "Flooring",
+      "year": "2024",
+      "tags": ["SEO"],
+      "summary": "Local search for high-intent flooring queries in Edmonton — the kind people type when they are ready to book a measure.",
+      "result": "Found for ready-to-buy searches.",
+      "palette": "oak"
+    },
+    {
+      "id": "malabar",
+      "client": "Malabar Cravings",
+      "industry": "Restaurant",
+      "year": "2025",
+      "tags": ["Digital media"],
+      "summary": "Social-first campaigns built to fill tables and grow a following that actually comes in, not just double-taps.",
+      "result": "Thursday nights, booked.",
+      "palette": "clay"
+    },
+    {
+      "id": "nitara",
+      "client": "Nitara Restaurant",
+      "industry": "Restaurant",
+      "year": "2024",
+      "tags": ["Website", "SEO"],
+      "summary": "A mobile-first site and local SEO push so guests find the menu, hours, and the door — without calling to ask.",
+      "result": "Menu, hours, and the map — found.",
+      "palette": "moss"
+    },
+    {
+      "id": "prairie-dental",
+      "client": "Prairie Dental",
+      "industry": "Healthcare",
+      "year": "2025",
+      "tags": ["Website", "SEO"],
+      "summary": "A calm, clear site for new-patient bookings, with local search pointed at people looking for a dentist this week.",
+      "result": "New-patient forms, weekly.",
+      "palette": "mist"
+    },
+    {
+      "id": "ridgeview",
+      "client": "Ridgeview HVAC",
+      "industry": "Home services",
+      "year": "2024",
+      "tags": ["SEO", "Digital media"],
+      "summary": "Seasonal search and ads for emergency calls and planned replacements — the two moments an HVAC company actually needs to show up.",
+      "result": "Winter search, covered.",
+      "palette": "ink"
+    },
+    {
+      "id": "ember-oak",
+      "client": "Ember & Oak",
+      "industry": "Restaurant",
+      "year": "2025",
+      "tags": ["Website", "Digital media"],
+      "summary": "A site that can take a reservation and an events page that gets used, backed by media that fills the dining room.",
+      "result": "Events page that gets used.",
+      "palette": "wine"
+    }
+  ],
+  "about": {
+    "manifesto": "We are an Edmonton studio focused on search visibility, digital media, and websites that work as hard as you do. The work is clear, measurable, and built around how customers actually search and shop.",
+    "points": [
+      {
+        "title": "Local Alberta focus",
+        "description": "We know the Edmonton market — and how people here look for a contractor, a table, or a dentist."
+      },
+      {
+        "title": "One partner",
+        "description": "SEO, media, and the site under one roof, so the pieces are aimed at the same outcome."
+      },
+      {
+        "title": "Plain-language reporting",
+        "description": "What ran, what it did, and what’s next. No dashboards for the sake of dashboards."
+      },
+      {
+        "title": "Sized for growth",
+        "description": "Practical plans for small and mid-size teams. Not an enterprise retainer in disguise."
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "quote": "We used to hope the phone would ring. Now the site sends us quote requests before we’ve poured the coffee.",
+      "name": "Owner",
+      "role": "Edmonton construction firm"
+    },
+    {
+      "quote": "Paid social used to be a guess. We finally know which ads fill tables on a Thursday.",
+      "name": "Operator",
+      "role": "Local restaurant"
+    },
+    {
+      "quote": "They talk like people. The report is a page, not a deck, and I know what to do with it.",
+      "name": "Principal",
+      "role": "Alberta professional services"
+    }
+  ],
+  "contactCopy": {
+    "headline": "Let’s grow your business.",
+    "lead": "Based in Edmonton, working with businesses across Alberta. Tell us a bit about the project."
+  }
+}

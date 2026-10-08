@@ -1,0 +1,68 @@
+# dependencies
+node_modules
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnpm-store
+
+# next.js
+.next
+out
+.turbo
+.vercel
+
+# production / build
+build
+dist
+
+# testing
+coverage
+*.lcov
+.nyc_output
+
+# env — keep committed examples
+.env
+.env.*
+!.env.example
+!.env.example.*
+
+# debug / logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# caches
+.cache
+.npm
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+next-env.d.ts
+
+# typescript / tooling
+*.pem
+*.local
+
+# os / editors
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json

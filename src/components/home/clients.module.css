@@ -1,0 +1,122 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  padding-block: 3.25rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 4.25rem;
+  }
+}
+
+.viewport {
+  --fade: 4.5rem;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--fade),
+    #000 calc(100% - var(--fade)),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 var(--fade),
+    #000 calc(100% - var(--fade)),
+    transparent
+  );
+}
+
+@media (max-width: 640px) {
+  .viewport {
+    --fade: 1.5rem;
+  }
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: marquee 48s linear infinite;
+  will-change: transform;
+}
+
+.viewport:hover .track,
+.viewport:focus-within .track {
+  animation-play-state: paused;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  padding-inline: 0.25rem;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-inline: 1.35rem;
+  color: color-mix(in srgb, var(--foreground) 62%, transparent);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  transition: color 220ms ease, transform 220ms ease;
+}
+
+@media (min-width: 768px) {
+  .item {
+    padding-inline: 1.85rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    font-size: 1.375rem;
+  }
+}
+
+.item:hover,
+.item:focus-visible {
+  color: var(--foreground);
+  transform: translateY(-1px);
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--foreground) 22%, transparent);
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .track {
+    animation: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.85rem;
+  }
+
+  .group:last-child {
+    display: none;
+  }
+}

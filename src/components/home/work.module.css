@@ -1,0 +1,122 @@
+.rail {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: max(1rem, calc((100vw - 1440px) / 2 + 2rem));
+  padding-inline: max(1rem, calc((100vw - 1440px) / 2 + 2rem));
+  padding-block: 0.25rem 0.5rem;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-x pan-y;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+.rail:active {
+  cursor: grabbing;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 min(78vw, 34rem);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (min-width: 768px) {
+  .rail {
+    gap: 1.75rem;
+  }
+
+  .card {
+    flex-basis: min(62vw, 38rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    flex-basis: min(46vw, 40rem);
+  }
+}
+
+.visual {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  isolation: isolate;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse 70% 70% at 60% 40%, #000 10%, transparent 75%);
+}
+
+.initial {
+  position: absolute;
+  right: -4%;
+  bottom: -18%;
+  font-size: clamp(7rem, 18vw, 13rem);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.1);
+  user-select: none;
+  pointer-events: none;
+}
+
+.scrub {
+  appearance: none;
+  width: 100%;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.scrub::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scrub::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  border: 0;
+  border-radius: 999px;
+  background: #1d1d1f;
+}
+
+.scrub::-moz-range-track {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scrub::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 999px;
+  background: #1d1d1f;
+}
+
+.scrub:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 6px;
+}
